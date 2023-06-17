@@ -1,5 +1,5 @@
 import styled from'styled-components';
-
+import { Button } from './Button';
 const StartGame = ({toggle}) => {
   return (
    <Container> 
@@ -28,30 +28,6 @@ const Container = styled.div`
         font-size: 96px;
         white-space: nowrap;
         }
-    }
-
-`;
-const Button= styled.button`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000;
-    color: white;
-    border-radius: 5px;
-    padding: 10px 18px ;
-    min-width: 220px;
-    border: none;
-    font-size: 16px;
-    border: 1px solid transparent;
-    transition: 0ms.3s background ease-in;
-
-    &:hover{
-        background-color: white;
-        border: 1px solid  black;
-        color: black;
-        cursor: pointer; 
-        transition: 0ms.3s background ease-in;
     }
 
 `;

@@ -1,16 +1,26 @@
-import { useState } from "react";
+
 import styled from "styled-components";
-const NumberSelector = () => {
+const NumberSelector = ({
+     setError,
+     error, 
+     selectedNumber, 
+     setSelectedNumber
+    }) => {
     const arrayNumber = [ 1,2,3,4,5,6];
-    const [selectedNumber, setSelectedNumber]=useState();
+
+    const numberSelectorHandler=(value)=>{
+        setSelectedNumber(value)
+        setError(" ")
+    }
     
   return (
    <NumberSelectorContainer>
+    <p className="error">{error}</p>
     <div className="flex">
           {arrayNumber.map((value, i)=>(
             <Box
             isSelected={value==selectedNumber }
-            key={i} onClick={()=>setSelectedNumber(value)}>{value}</Box>
+            key={i} onClick={()=>numberSelectorHandler(value)}>{value}</Box>
         ) ) }
     </div>
     <p>Select Number</p>
@@ -32,6 +42,9 @@ const NumberSelectorContainer=styled.div`
     font-size: 24px;
     font-weight: 700px;
    } 
+   .error{
+        color: red;
+   }
 `;
 
 const Box=styled.div`
