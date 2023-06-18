@@ -13,6 +13,7 @@ const Total_Score = ({score}) => {
 export default Total_Score;
 const ScoreContainer=styled.div`
     max-width: 200px;
+    
     text-align: center;
     h1{
       font-size:100px;
