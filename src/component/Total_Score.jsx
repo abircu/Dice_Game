@@ -4,7 +4,7 @@ const Total_Score = ({score}) => {
   return (
     <ScoreContainer>
         <h1>{score}</h1>
-        <p>Total Score</p>    
+        <p>Total Score..</p>    
     </ScoreContainer>
       
   );
@@ -21,6 +21,5 @@ const ScoreContainer=styled.div`
     p{
         font-size: 24px;
         font-weight:500px;
-    }
-  
+    } 
 `;
