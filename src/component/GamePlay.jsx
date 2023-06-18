@@ -84,4 +84,11 @@ const MainContainer=styled.main`
     align-items: center;
     gap: 10px;
   }
+  @media (0 <width < 780px){
+     .top_section{
+      display: flex;
+     flex-direction: column;
+     justify-content: center;
+     }
+  }
 `;

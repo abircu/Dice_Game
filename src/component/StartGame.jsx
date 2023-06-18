@@ -29,5 +29,26 @@ const Container = styled.div`
         white-space: nowrap;
         }
     }
+    @media (0 <width <780px){
+      padding: 24px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    img{
+      width: 300px;
+      height: 300px;
+    }
+    .content{
+      width: 300px;
+      height: 300px;
+      gap: 24px;
+      h1{
+        font-size: 48px;
+      }
+    }
+   
 
 `;

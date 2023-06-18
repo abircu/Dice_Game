@@ -43,9 +43,9 @@ const NumberSelectorContainer=styled.div`
     font-weight: 700px;
    } 
    .error{
-        color: red;
+    color: red;
    }
-`;
+   `;
 
 const Box=styled.div`
     height: 72px;
@@ -57,5 +57,9 @@ const Box=styled.div`
     font-weight: 700;
     background-color: ${(props)=>props.isSelected ? "black" : "white"};
     color: ${(props)=>props.isSelected ? "white" : "black"};
-
+      @media (0 <width < 780px){
+        width: 32px;
+        height:32px;
+        font-size: 16px;
+      }
 `;
